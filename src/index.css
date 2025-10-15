@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #2F1893;
+  --secondary: #482BE7;
+  --blue-green: #25DAC4;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-blue-green: var(--blue-green);
+}
+
+button {
+  @apply cursor-pointer;
+}
