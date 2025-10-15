@@ -4,7 +4,7 @@ import { menuItems } from '../constants'
 import { FaBehance, FaDribbble } from 'react-icons/fa'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const iconSize = 18
 
   return (
@@ -42,7 +42,7 @@ const Header = () => {
 
 export default Header
 
-const MobileMenu = ({ isOpen }: { isOpen: boolean }) => {
+const MobileMenu = ({ isOpen }) => {
   return (
     <div
       className={`${
